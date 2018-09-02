@@ -1,0 +1,19 @@
+<view class="page">
+    <!--微信登陆-->
+    <view class="userinfo">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{UI[uindex].greeting}}\n{{userInfo.nickName}}</text>
+    </view>
+
+    <view class="page__bd">
+        <view class="weui-grids">
+            <block wx:for="{{grids}}" wx:item="*this">
+                <navigator url="../{{item.path}}/{{item.path}}" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../../images/info/{{item.icon}}" />
+                    <view class="weui-grid__label">{{item.name}}</view>
+                    <view wx:if="{{item.isunread}}" class="badge">{{1}}</view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+</view>

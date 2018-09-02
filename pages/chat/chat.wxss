@@ -1,0 +1,117 @@
+/**route.wxss**/
+.container{
+    padding:0rpx;
+    margin:0rpx;
+}
+.user_base_info{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size:30rpx;
+    margin:40rpx 0rpx;
+}
+.user_base_info .user_avatar{
+    width:200rpx;
+    height:250rpx;
+    border-radius:100%;
+    margin-right:40rpx;
+    margin-left:10rpx;
+    flex-direction:column;
+}
+.user_base_info .user_avatar image{
+    width:100%;
+    height:100%;
+}
+.user_base_info .user_info{
+    color:#000;
+    line-height: 48rpx;
+
+}
+.user_addr_manage{
+    width:100%;
+}
+.user_addr_manage .user_addr_title{
+    padding:10rpx 60rpx;
+    display: block;
+    text-align: center;
+    font-size:40rpx;
+    margin-bottom:40rpx;
+    color: #4682B4
+}
+
+.user_addr_manage .user_addr_title_1{
+    padding:10rpx 60rpx;
+    display: block;
+    text-align: center;
+    font-size:40rpx;
+    margin-bottom:40rpx;
+    color: #4682B4
+}
+.user_addr_manage .user_addr_item{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom:1px solid #ddd;
+    padding:10rpx 40rpx;
+    vertical-align: middle;
+    line-height: 36rpx;
+    font-size:30rpx;
+    box-sizing:border-box;
+    position: relative;
+}
+.user_addr_item  .addr_sub{
+    width:580rpx;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.user_addr_item .addr_edit{
+    width:50rpx;
+    background:url(../../images/edit.png) no-repeat;
+    background-position: center;
+    background-size:100%;  
+}
+navigator{
+    margin:0rpx 0 20rpx;
+    padding:30rpx;
+    border-bottom:1px solid #ddd;
+    font-size:32rpx;
+    text-align: center;
+    color:#d24a58;
+}
+
+.table{
+  border:1px solid #dadada;
+  border-right: 0;
+  border-bottom: 0;
+  width: 98%;
+}
+.tr{
+  width:100%;
+  display : flex;
+  justify-content: space-between;
+}
+.td{
+  padding: 10px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width:40%;
+  font-size: 18rpx;
+}
+.th{
+   padding: 10px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width:100%;
+  justify-content: center;
+  font-weight: 400;
+  background-color: #dadada;
+  font-size: 24rpx;
+}
+
+

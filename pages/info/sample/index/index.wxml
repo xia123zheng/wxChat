@@ -1,0 +1,78 @@
+<view class="page">
+    <!--<view class="page__hd">
+        <view class="page__title">Panel</view>
+        <view class="page__desc">面板</view>
+    </view>-->
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd">图文组合列表</view>
+            <view class="weui-panel__bd">
+                <navigator url="../../info/payment/payment" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../../../images/salary.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">月薪</view>
+                        <view class="weui-media-box__desc">2017/4</view>
+                    </view>
+                </navigator>
+            
+                <navigator url="../../info/payment/payment" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../../../images/salary.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">月薪</view>
+                        <view class="weui-media-box__desc">2017/14</view>
+                    </view>
+                </navigator>
+                
+                <navigator url="../../info/payment/payment" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../../../images/salary.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">月薪</view>
+                        <view class="weui-media-box__desc">2017/4</view>
+                    </view>
+                </navigator>
+                
+                <navigator url="../../info/payment/payment" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../../../images/salary.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">月薪</view>
+                        <view class="weui-media-box__desc">2017/4</view>
+                    </view>
+                </navigator>
+
+                <navigator url="../../info/payment/payment" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../../../images/bonus.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">季度奖金</view>
+                        <view class="weui-media-box__desc">2017/6</view>
+                    </view>
+                </navigator>
+
+                <navigator url="../../info/payment/payment" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../../../images/salary.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">月薪</view>
+                        <view class="weui-media-box__desc">2017/4</view>
+                    </view>
+                </navigator>
+            </view>
+            <view class="weui-panel__ft">
+                <view class="weui-cell weui-cell_access weui-cell_link">
+                    <view class="weui-cell__bd">查看更多</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

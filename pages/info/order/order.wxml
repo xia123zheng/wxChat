@@ -1,0 +1,26 @@
+
+<view class='btns'>
+    <view class="nav_btn {{select == 'all' ? 'selected' : ''}}" bindtap="navbtn" data-id='1'>全部</view>
+    <view class="nav_btn {{select == 'all' ? '' : 'selected'}}" bindtap="navbtn" data-id='2'>我的</view>
+  </view>
+  
+  <scroll-view class='scroll' style='width:{{width}}px;height:{{height-(80/pixelRatio)}}px' scroll-y='true' bindscrolltolower="loadMore" lower-threshold="300">
+    <block wx:for='{{pros}}' wx:for-item='pro' wx:key='pro.pid'>
+      <navigator url="../../../pages/info/userinfo/userinfo" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+      <view class='pro' data-id="{{pro.pid}}">
+        <image src="{{pro.user.avatarUrl}}" mode="aspectFill"></image>
+        <view class='content'>
+          <view class='content_top'>
+            <view class='nickname'>{{pro.user.nickName}}</view>
+            <view class="btn {{pro.attention == '' ? 'unselect' : 'select'}}" catchtap="attentionBtn" data-index="{{index}}" data-pid="{{pro.pid}}" data-attentionid="{{pro.attention}}">{{pro.attention == '' ? '跟单' : '已跟单'}}</view>
+        </view>
+          <view class='brief'><text>{{pro.brief}}</text></view>
+          <view class='latest'>等级：{{pro.latest}}</view>          
+        </view>
+      </view>
+      </navigator>
+    </block>
+    <view class='loading' wx:if='{{showLoadMore}}'>
+正在加载...
+</view>
+  </scroll-view>

@@ -1,0 +1,52 @@
+<!--user.wxml-->
+<view class="container">
+  <view class="user_base_info">
+    <view class="user_avatar">
+        <image src="{{imageUrl}}"></image>
+    </view>
+    <view class="user_info">
+      <text class="iconfont icon-ziyuan"> ：{{userData.name}} </text>　　　　　
+      <text class="iconfont icon-birthday"> ：1994.3.1 \n</text>
+       <text class="iconfont icon-iconfontmingpian"> ： 程序员 </text>　　　　
+       <text class="iconfont icon-wodetouzi"> ：10000元 \n </text>
+        <text class="iconfont icon-phone"> ：18810388284  </text>　
+       <text class="iconfont icon-xiaoxi"> ：VIP客户 \n</text>
+       <text class="iconfont icon-wxbdingwei"> ：北京市海淀区 </text>
+      
+       
+    </view>
+  </view>
+
+ <view class="user_addr_manage">
+    <view class="user_addr_title">【1】【推荐产品】</view>
+    <view class="table">
+        <view class="tr">
+            <view class="th">产品序号</view>
+            <view class="th">产品名称</view>
+            <view class="th">起投金额/万</view>
+            <view class="th">期限/月</view>
+            <view class="th">收益率</view>
+        </view>
+      <view class="tr" wx:for="{{listData}}">
+          <view class="td">{{item.code}}</view>
+          <view class="td">{{item.text}}</view>
+          <view class="td">{{item.type}}</view>
+          <view class="td">{{item.type}}</view>
+          <view class="td">{{item.type}}</view>
+      </view>
+    </view>
+      <navigator url="../edit_addr/edit_addr" >新增产品 +</navigator>
+</view>
+
+  <view class="user_addr_manage">
+    <view class="user_addr_title_1">【2】【营销方案】</view>
+    <block wx:for="{{addrDate}}" wx:key="item.id">
+      <view class="user_addr_item">
+          <text class="addr_sub">{{item}}</text>
+          <view class="addr_edit" bindtap="editAddr" data-addrid="{{index+1}}"></view>
+      </view> 
+    </block>
+     <navigator url="../edit_addr/edit_addr" >新增方案 +</navigator>
+ </view>
+
+</view>

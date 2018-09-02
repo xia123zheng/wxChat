@@ -1,0 +1,22 @@
+<!--pages/pic/pic.wxml-->
+<scroll-view scroll-y="true" style="height : 500px;" scroll-top="{{scrollTop}}">
+<block wx:for="{{msglist}}">
+  <view class="send" wx:if="{{item.type==0}}">
+    <text class="send_text">{{item.msg}}</text>
+    <image class="photo" src="/images/people.png"></image>
+  </view>
+
+  <view class="reply" wx:if="{{item.type==1}}">
+    <image class="photo" mode="aspectFill" src="/images/robot_2.jpg"></image>
+    <text class="replay_text">{{item.msg}}</text>
+  </view>
+</block>
+</scroll-view>   
+
+<form bindsubmit="send">
+  <view class="sendMsg">
+      <textarea name="msg" class="inputMsg"  placeholder="可以咨询我哟"/>　　　
+      <button form-type='submit' class="sendBtn">发送</button>
+  </view>
+</form>
+

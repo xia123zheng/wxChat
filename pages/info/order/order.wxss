@@ -1,0 +1,101 @@
+.btns {
+  display: flex;
+  height: 90rpx;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btns .nav_btn {
+  flex-shrink: 0;
+  flex: 1;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  background-color: #fff;
+  color: #333333;
+  font-size: 34rpx;
+  border-bottom: 4rpx solid #ffffff;
+}
+
+.btns .nav_btn.selected {
+border-bottom: 4rpx solid #36b9af;
+  color: #36b9af;
+}
+
+.pro{
+border-radius: 6rpx;
+background-color: #ffffff;
+margin: 20rpx;
+padding: 20rpx;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+}
+
+.pro image{
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 90rpx;
+flex-shrink: 0;
+}
+.pro .content{
+    flex: 1;
+    margin-left: 16rpx;
+}
+.pro .content .content_top{
+    margin-top: 6rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.pro .content .content_top .nickname{
+    color: #36b9af;
+    font-size: 40rpx;
+    flex: 1;
+    margin-right: 6rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.pro .content .content_top .btn{
+    width: 120rpx;
+    height: 50rpx;
+    border-radius: 8rpx;
+    font-size: 28rpx;
+    text-align: center;
+    line-height: 50rpx;
+}
+.pro .content .content_top .unselect{
+  background-color: #36b9af;
+  color: #fff;
+}
+.pro .content .content_top .select{
+      background-color: #e6e6e6;
+  color: #999999;
+  font-size: 24rpx;
+}
+
+.pro .content .brief{
+    margin-top: 18rpx;
+    color: #666666;
+    font-size: 34rpx;
+}
+.pro .content .brief text{
+     word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-height: 1.2rem;
+  -webkit-line-clamp:3;
+}
+
+.pro .content .latest{
+    color: #999999;
+    font-size: 24rpx;
+margin-top: 14rpx;
+}
+
+

@@ -1,0 +1,57 @@
+/* pages/pic/pic.wxss */
+.reply{
+  flex-direction: row;
+  margin: 10px;
+  display:flex;
+}
+.send{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  justify-content: flex-end;
+}
+.photo{
+  width: 40px;
+  height: 40px;
+  background-color: #999;
+  position:absolute;
+}
+.send_text{
+  
+  margin-left: 40px;
+  margin-right: 45px;
+  padding: 10px;
+  background-color: #ADFF2F;
+  border-radius: 5px;
+}
+.replay_text{
+  margin-left: 45px;
+  margin-right: 40px;
+  padding: 10px;
+  background-color: #FFC0CB;
+  border-radius: 5px;
+}
+.sendMsg{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 15px;
+  height: 30px;
+  margin-left: 20px
+}
+.inputMsg{
+  background-color: #999;
+  height: 30px;
+  border-radius: 15px;
+}
+.sendBtn{
+
+  background-color: #000;
+  color: #00e5ff !important;
+  height: 30px;
+  font-size: 12px;
+  bottom: 0;
+  position: fixed;
+  margin-bottom: 15px;
+  
+}

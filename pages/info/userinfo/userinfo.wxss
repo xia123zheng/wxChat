@@ -1,0 +1,194 @@
+@import "../common/lib/weui.wxss";
+
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+
+.weui-form-preview{
+    margin-bottom: 25px;
+}
+
+
+page{
+    background-color: #F8F8F8;
+    font-size: 16px;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.page__hd {
+    padding: 30px;
+}
+
+.page__bd {
+    padding-bottom: 40px;
+}
+.page__bd_spacing {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page__ft{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.page__title {
+   margin-top: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.page__desc {
+    margin-top: 30px;
+    color: #888888;
+    text-align: center;
+    font-size: 18px;
+}
+
+.page__chart {
+    text-align: center;
+    
+}
+
+.weui-tab__content{
+    padding-top: 130px;
+    text-align: center;
+}
+
+.weui-tab__content_pro{
+    padding-top: 60px;
+    text-align: center;
+}
+
+.weui-navbar__slider {
+    background-color:#fff !important;
+}
+
+.weui-navbar__item {
+    color: lightgrey;
+}
+
+.weui-navbar__item.weui-bar__item_on {
+    color: white;
+}
+
+.weui-navbar {
+    /*border-bottom:1rpx solid;*/
+    background-color: #006df0;
+    position: fixed
+}
+
+.weui-tab__content {
+    padding-top: 0 !important;
+}
+
+
+.weui-panel {
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.weui-panel:first-child {
+  margin-top: 0;
+}
+.weui-panel:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #E5E5E5;
+  color: #E5E5E5;
+}
+.weui-panel:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1rpx solid #E5E5E5;
+  color: #E5E5E5;
+}
+.weui-panel__hd {
+  padding: 14px 15px 10px;
+  color: #999999;
+  font-size: 13px;
+  position: relative;
+}
+.weui-panel__hd:after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1rpx solid #E5E5E5;
+  color: #E5E5E5;
+  left: 15px;
+}
+
+/*推荐产品CSS*/
+.user_addr_manage{
+    width:100%;
+}
+
+.user_addr_title{
+    width:100%;
+    justify-content: center;
+    margin-left: 0px;
+    padding:20rpx 60rpx;
+    display: block;
+    text-align: center;
+    font-size:40rpx;
+    margin-bottom:40rpx;
+    color: #4682B4
+}
+
+.table{
+  border:1px solid #dadada;
+  border-right: 0;
+  border-bottom: 0;
+  width: 100%;
+  text-align: center;
+  
+}
+.tr{
+  width:100%;
+  display : flex;
+  justify-content: space-between;
+}
+.td{
+  padding: 10px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width:40%;
+  font-size: 18rpx;
+}
+.th{
+   padding: 10px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width:100%;
+  justify-content: center;
+  font-weight: 400;
+  background-color: #dadada;
+  font-size: 24rpx;
+}
+
+/*客户人脸图片*/
+.pro{
+border-radius: 6rpx;
+background-color: #ffffff;
+margin: 20rpx;
+padding: 20rpx;
+display: flex;
+}

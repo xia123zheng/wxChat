@@ -1,0 +1,70 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">2017年04月度</view>
+        <view class="page__desc">月薪明细</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-form-preview">
+            <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">雇员编号</view>
+                    <view class="weui-form-preview__value">C275</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">雇员姓名</view>
+                    <view class="weui-form-preview__value">张三</view>
+                </view>
+            </view>
+
+            <view class="weui-form-preview__hd">               
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">基础薪水</view>
+                    <view class="weui-form-preview__value">¥12400.00</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">销售津贴</view>
+                    <view class="weui-form-preview__value">¥1800.00</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">缺勤扣除</view>
+                    <view class="weui-form-preview__value">¥-100.00</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">交通费</view>
+                    <view class="weui-form-preview__value">¥200.00</view>
+                </view>
+            </view>
+
+            <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">养老保险</view>
+                    <view class="weui-form-preview__value">¥980.00</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">医疗保险</view>
+                    <view class="weui-form-preview__value">¥120.00</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">住房公积金</view>
+                    <view class="weui-form-preview__value">¥700.00</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">个人所得税</view>
+                    <view class="weui-form-preview__value">¥1200.00</view>
+                </view>
+            </view>
+            
+            <view class="weui-form-preview__bd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">实际发放金额</view>
+                    <view class="weui-form-preview__value_in-hd">¥15400.00</view>
+                </view>
+            </view>
+            
+            <view class="weui-form-preview__ft">
+                <navigator url="../../sample/index/index" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">返回</navigator>
+            </view>
+        </view>
+        
+    </view>
+</view>

@@ -1,0 +1,8 @@
+<!--pages/chat/chat.wxml-->
+<scroll-view scroll-y="true" style="height : 500px;" scroll-top="{{scrollTop}}">
+ 
+  <!--  <canvas canvas-id="ringCanvas" disable-scroll="true" class="canvas"></canvas>-->
+<canvas canvas-id="ringCanvas" disable-scroll="true" style="width: 400px; height: 500px;"></canvas>
+
+</scroll-view>   
+

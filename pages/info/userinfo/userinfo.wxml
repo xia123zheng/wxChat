@@ -1,0 +1,140 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+
+            
+                        
+            
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                      <view class="page__hd">
+                        
+                        <view class="page__desc">用户画像</view>
+                        <canvas canvas-id="radarCanvas" disable-scroll="true" style="width: 400px; height: 200px;"></canvas>
+
+                    </view>
+                    <view class="page__bd">
+                        <view class="weui-form-preview">
+                            <view class="weui-form-preview__hd">
+                                <view class="weui-form-preview__item">
+                                    <view class="weui-form-preview__label__man">
+                                    <image  style="width: 50px; height: 50px; border-radius: 100rpx;" src="../../../images/client/mht.jpg" mode="aspectFill"></image>
+                                    </view>
+                                    <view class="weui-form-preview__value_name">马化滕
+                                    </view>
+                                </view>
+                                <view class="weui-form-preview__item">
+                                    <view class="weui-form-preview__label">年龄</view>
+                                    <view class="weui-form-preview__value">56</view>
+                                </view>
+                                <view class="weui-form-preview__item">
+                                    <view class="weui-form-preview__label">电话号码</view>
+                                    <view class="weui-form-preview__value">18810388284</view>
+                                </view>
+                                <view class="weui-form-preview__item">
+                                    <view class="weui-form-preview__label">邮箱</view>
+                                    <view class="weui-form-preview__value">495133087@qq.com</view>
+                                </view>
+                                <view class="weui-form-preview__item">
+                                    <view class="weui-form-preview__label">家庭住址</view>
+                                    <view class="weui-form-preview__value">深圳</view>
+                                </view>
+                            </view>
+
+                            <view class="weui-form-preview__hd">               
+                                <view class="weui-form-preview__item">
+                                    <view class="weui-form-preview__label">学历</view>
+                                    <view class="weui-form-preview__value">硕士研究生</view>
+                                </view>
+                                <view class="weui-form-preview__item">
+                                    <view class="weui-form-preview__label">职业</view>
+                                    <view class="weui-form-preview__value">腾讯CEO</view>
+                                </view>
+                                <view class="weui-form-preview__item">
+                                    <view class="weui-form-preview__label">信用等级</view>
+                                    <view class="weui-form-preview__value">5颗星</view>
+                                </view>
+                                <view class="weui-form-preview__item">
+                                    <view class="weui-form-preview__label">收入</view>
+                                    <view class="weui-form-preview__value">$200000000.00</view>
+                                </view>
+                                <view class="weui-form-preview__item">
+                                    <view class="weui-form-preview__label">负债</view>
+                                    <view class="weui-form-preview__value">0</view>
+                                </view>
+                                <view class="weui-form-preview__item">
+                                    <view class="weui-form-preview__label">资产</view>
+                                    <view class="weui-form-preview__value">$20000000000000.00</view>
+                                </view>
+                            </view>
+
+                            <view class="weui-form-preview__hd">
+                                <view class="weui-form-preview__item">
+                                    <view class="weui-form-preview__label">客户等级</view>
+                                    <view class="weui-form-preview__value">私人银行客户</view>
+                                </view>
+                                <view class="weui-form-preview__item">
+                                    <view class="weui-form-preview__label">产品名称</view>
+                                    <view class="weui-form-preview__value">私人银行家业常青系列</view>
+                                </view>
+                              
+                            </view>
+                            
+                            <view class="weui-form-preview__hd">
+                                <view class="weui-form-preview__item">
+                                    <view class="weui-form-preview__label">标签1</view>
+                                    <view class="weui-form-preview__value">旅游达人</view>
+                                </view>
+                                 <view class="weui-form-preview__item">
+                                    <view class="weui-form-preview__label">标签2</view>
+                                    <view class="weui-form-preview__value">理财达人</view>
+                                </view>
+
+                                   <view class="weui-form-preview__item">
+                                    <view class="weui-form-preview__label">网点服务</view>
+                                    <view class="weui-form-preview__value_love">爱喝咖啡、好面子</view>
+                                </view>
+                            </view>
+                            
+                        </view>
+                        
+                    </view>   
+
+
+                </view>
+                
+                
+                <view class="weui-tab__content_pro" hidden="{{activeIndex != 1}}">
+                  <view class="user_addr_manage">
+                      <view class="table">
+                          <view class="tr">
+                              <view class="th">产品代码</view>
+                              <view class="th">产品名称</view>
+                              <view class="th">起投金额/w</view>
+                              <view class="th">期限/m</view>
+                              <view class="th">预期收益率/%</view>
+                              <view class="th">风险等级</view>
+                          </view>
+                        <view class="tr" wx:for="{{listData}}">
+                            <view class="td">{{item.code}}</view>
+                            <view class="td">{{item.type}}</view>
+                            <view class="td">{{item.money}}</view>
+                            <view class="td">{{item.time}}</view>
+                            <view class="td">{{item.benefit}}</view>
+                            <view class="td">{{item.risk}}</view>
+                        </view>
+                      </view>
+                  </view>
+
+                </view>
+            </view>
+       
+    </view>
+</view>

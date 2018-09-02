@@ -1,0 +1,60 @@
+{
+  "pages":[
+    "pages/face/face",
+    "pages/pic/pic",
+    "pages/orderplatform/orderplatform",
+    "pages/chat/chat",
+    "pages/edit_addr/edit_addr",
+    "pages/info/index/index",
+    "pages/info/salary/salary",
+    "pages/info/payment/payment",
+    "pages/info/order/order",
+    "pages/info/userinfo/userinfo",
+    "pages/info/kaoqin/kaoqin",
+    "pages/info/timecard/normal/normal",
+    "pages/info/timecard/history/history",
+    "pages/info/sample/index/index",
+    "pages/info/overwork/create/create"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#006df0",
+    "navigationBarTitleText": "智能网点",
+    "navigationBarTextStyle":"write"
+  },
+  "tabBar":{
+    "backgroundColor":"#ffffff",
+    "color":"#7A7E83",
+    "borderStyle": "black",
+    "selectedColor":"#006df0",
+    "list":[
+      {
+        "pagePath": "pages/face/face",
+        "text": "人脸识别",
+        "iconPath": "images/face_1.png",
+        "selectedIconPath": "images/face_1.png"
+      },
+      
+      {
+        "pagePath": "pages/pic/pic",
+        "text": "智能聊天",
+        "iconPath": "images/chat.png",
+        "selectedIconPath": "images/chat.png"
+      },
+      {
+        "pagePath": "pages/orderplatform/orderplatform",
+        "text": "抢单平台",
+        "iconPath": "images/orders.png",
+        "selectedIconPath": "images/orders.png"
+      },
+        {"pagePath":"pages/info/index/index",
+          "text":"数据展示",
+          "iconPath":"images/datas.png",
+          "selectedIconPath":"images/datas.png"
+
+        }
+
+    ]
+  }
+}
